@@ -1,0 +1,13 @@
+.button{
+    position: relative;
+
+}
+
+#card{
+    
+    position:inherit;
+    padding:5px;
+    flex-direction:horizontal;
+    word-wrap: normal;
+    
+}
