@@ -30,20 +30,5 @@ const displayData = (data) => {
 
 }
 
-// if (gitRepository == gitRepository[randResult][8]) {
-
-//     gitRepository = [randResult][8];
-
-// } else {
-//     (gitRepository == null)
-
-//     gitRepository = "No Public Repository";
-// }
-
-// console.log(gitRepository)
-
-
-
-
 fetchNasaData()
 

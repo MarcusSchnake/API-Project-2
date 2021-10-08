@@ -1,5 +1,17 @@
-.button{
-    position: relative;
+body {
+    background-image: url(https://wallpapercave.com/wp/wp2757954.gif) !important;
+    display: block;
+}
+
+
+#button{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    
+    
+   
 
 }
 
@@ -10,4 +22,13 @@
     flex-direction:horizontal;
     word-wrap: normal;
     
+}
+
+.cardContainer {
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px;
 }
