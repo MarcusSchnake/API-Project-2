@@ -9,6 +9,7 @@ button.addEventListener('click', fetchNasaData);
 const githubLink = document.getElementById('githubLink');
 
 
+
 //fetch
 
 async function fetchNasaData() {
@@ -25,6 +26,7 @@ const displayData = (data) => {
     const randResult = Math.floor(Math.random() * (38 - 2) + 2);
     const mapResult = data.results[randResult].map((item) => item)
     console.log(mapResult, 'No Repository');
+
     const mappedData = data.results.map((item) => {
         return {
             pattenNumber: item[0],
@@ -45,8 +47,7 @@ const displayData = (data) => {
     prototypeName.innerText = (data.results[randResult][5]);
     softwareType.innerText = (data.results[randResult][2]);
     softwareDescription.innerText = (data.results[randResult][3]);
-    githubLink.innerText = (mappedData[randResult]?.pattenGithub);
-
+    githubLink.setAttribute("href",`${mappedData[randResult]?.pattenGithub}`);
     
 
 
