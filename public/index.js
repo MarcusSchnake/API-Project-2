@@ -25,7 +25,7 @@ async function fetchNasaData() {
 const displayData = (data) => {
     const randResult = Math.floor(Math.random() * (38 - 2) + 2);
     const mapResult = data.results[randResult].map((item) => item)
-    console.log(mapResult, 'No Repository');
+    console.log(mapResult);
 
     const mappedData = data.results.map((item) => {
         return {
